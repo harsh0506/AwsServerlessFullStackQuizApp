@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Navbar from "../LandingPage/Navbar";
-import { openDB } from 'idb';
+
 import { useLocation } from "react-router-dom";
+import { fetchData } from "./HelperFunctions";
 
 function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -17,31 +18,7 @@ function App() {
   const subject = name || "Science: Mathematics";
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const db = await openDB('testDB', 1, {
-          upgrade(db) {
-            db.createObjectStore('cache');
-          },
-        });
-
-        const cachedData = await db.get('cache', subject);
-
-        if (cachedData) {
-          setTestData(cachedData);
-        } else {
-          const response = await fetch(import.meta.env.VITE_SPECIFIC_DATA + subject);
-          const fetchedData = await response.json();
-
-          await db.put('cache', fetchedData, subject);
-          setTestData(fetchedData);
-        }
-      } catch (error) {
-        console.error('Error fetching test data:', error);
-      }
-    };
-
-    fetchData();
+    fetchData(subject, setTestData);
   }, [subject]);
 
   const handleStartTest = () => {
