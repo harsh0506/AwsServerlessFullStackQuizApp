@@ -31,7 +31,7 @@ This is a serverless quiz application built using AWS Lambda, API Gateway, and D
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/quiz-app.git
+git clone [https://github.com/harsh0506/AwsServerlessFullStackQuizApp](https://github.com/harsh0506/AwsServerlessFullStackQuizApp)
 
 markdown
 Copy code
