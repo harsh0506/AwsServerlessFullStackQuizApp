@@ -20,8 +20,6 @@ function LandingPage() {
                 <HeroSection />
                 <Advantage />
                 <ContactUsPage />
-                
-                <Footer />
             </div>
 
         </>

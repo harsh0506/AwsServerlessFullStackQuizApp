@@ -10,7 +10,7 @@ load_dotenv()
 # Access environment variables
 api_key = os.getenv('VITE_APIURL')
 
-trivia_api = 'https://the-trivia-api.com/api/questions?categories=science&limit=20&difficulty=medium'
+trivia_api = 'https://opentdb.com/api.php?amount=20&category=23&difficulty=medium&type=multiple'
 
 
 def Input_data(trivia_api):
@@ -39,7 +39,7 @@ def Input_data(trivia_api):
             my_values = [data[i]["correct_answer"], data[i]["incorrect_answers"]
                          [0], data[i]["incorrect_answers"][1], data[i]["incorrect_answers"][2]]
             random.shuffle(my_values)
-            dict1["subject"] = data[i]["category"]
+            dict1["subject"] = "History"
             dict1["answer"] = data[i]["correct_answer"]
             dict1["option1"] = my_values[0]
             dict1["option2"] = my_values[1]
@@ -59,7 +59,7 @@ def Input_data(trivia_api):
         # If the request was unsuccessful, print an error message
         print(f"Error: {response.status_code}")
 
-Input_data("https://opentdb.com/api.php?amount=25&category=19&type=multiple")
+Input_data(trivia_api)
 
 def Put_Random_where_sting_is_empty():
     response = requests.get("http://localhost:4500/MCQs")

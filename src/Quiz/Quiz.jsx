@@ -23,11 +23,6 @@ function App() {
 
   const handleStartTest = () => {
 
-    if (selectedTestId === 0) {
-      alert("Please select a test.");
-      return;
-    }
-
     if (testData && testData.length > 0) {
       setShowResult(false);
       setCurrentQuestionIndex(0);

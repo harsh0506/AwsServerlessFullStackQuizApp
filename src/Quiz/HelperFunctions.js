@@ -2,7 +2,7 @@ import { openDB } from 'idb';
 import axios from "axios"
 export const fetchData = async (subject, setTestData) => {
   try {
-    const db = await openDB('testDB', 1, {
+    const db = await openDB(`testDB`, 1, {
       upgrade(db) {
         db.createObjectStore('cache', { expireAfterSeconds: 2 * 60 * 60 });
       },

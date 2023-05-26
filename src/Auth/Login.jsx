@@ -42,8 +42,7 @@ function Auth() {
         }
 
         alert("successful")
-
-        navigate("/AddQuestion")
+        key === "Add" ? navigate("/AddQuestion") : navigate("/CustomerReview")
     };
 
 
@@ -78,7 +77,7 @@ function Auth() {
                                 />
 
                                 <div className="flex space-x-4">
-                                    <button onClick={SIWG}
+                                    <button onClick={()=>SIWG("Add")}
                                         class="mt-5 tracking-wide font-semibold bg-[#E7B3AE] text-gray-100 w-full py-4 rounded-lg hover:bg-[#A6271E] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
                                     >
                                         <svg
@@ -98,7 +97,7 @@ function Auth() {
                                         </span>
                                     </button>
 
-                                    <button onClick={SIWG}
+                                    <button onClick={()=>SIWG("dkjd")}
                                         class="mt-5 tracking-wide font-semibold bg-[#E7B3AE] text-gray-100 w-full py-4 rounded-lg hover:bg-[#A6271E] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
                                     >
                                         <svg

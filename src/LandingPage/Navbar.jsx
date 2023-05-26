@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-const navigation = [
+export const navigation = [
+    { name: 'Home', href: '/' },
     { name: 'Start Quiz', href: '/chooseSubject' },
     { name: 'Admin Login', href: '/Login' },
-    { name: 'advantage', href: '#advantage' },
-    { name: 'Company', href: '#' },
+    { name: 'advantage', href: '/#advantage' },
+    { name: 'contactUs', href: '/#contactusID' },
 ]
 
 function Navbar() {

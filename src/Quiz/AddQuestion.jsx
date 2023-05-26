@@ -303,7 +303,7 @@ const QuestionEditor = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto p-4">
+      <div style={{marginTop:"4rem"}} className="container mx-auto p-4">
         <h1 className="text-3xl font-bold mb-4">Perform CRUD Operations</h1>
         <p className="text-lg mb-4">
           This page allows you to perform Create, Read, Update, and Delete operations on questions.
