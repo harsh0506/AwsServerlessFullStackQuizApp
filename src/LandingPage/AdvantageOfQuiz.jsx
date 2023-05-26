@@ -1,39 +1,39 @@
 import React from 'react'
 const features = [
     {
-        name: 'Push to deploy',
+        name: '1. Enhances Knowledge',
         description:
-            'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+            ' Daily quizzes help expand your knowledge across various subjects and topics.',
     },
     {
-        name: 'SSL certificates',
+        name: '2. Improves Memory',
         description:
-            'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+            'Regular participation in quizzes aids in memory retention and recall.',
 
     },
     {
-        name: 'Simple queues',
+        name: '3. Boosts Confidence',
         description:
-            'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+            ' Solving quizzes regularly boosts your confidence in tackling different challenges.',
     },
     {
-        name: 'Advanced security',
+        name: '4. Fun and Interactive',
         description:
-            'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+            'Enjoy the excitement and interactive nature of daily quizzes,making learning enjoyable.',
     },
 ]
 function AdvantageOfQuiz() {
     return (
-        <div style={{paddingTop:"4rem" , paddingBottom:"4rem"}} className="bg-white py-16 sm:py-32">
+        <div id="advantage" style={{paddingTop:"4rem" , paddingBottom:"4rem"}} className="bg-white py-16 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
+                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Quiz faster</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Everything you need to deploy your app
+                    Advantages of Daily Quiz
                     </p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-                        pulvinar et feugiat blandit at. In mi viverra elit nunc.
+                    Engage in daily quizzes and enjoy a range of benefits! 
+        Test your knowledge, learn something new, and have fun!
                     </p>
                 </div>
                 <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

@@ -1,0 +1,29 @@
+.question-editor-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .question-editor-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .question-card {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .question-card {
+      max-width: 400px;
+    }
+  }
+  
+  /* Additional responsive styling can be added as per your requirements */
+  

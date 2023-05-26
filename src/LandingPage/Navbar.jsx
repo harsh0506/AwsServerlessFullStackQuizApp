@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 const navigation = [
     { name: 'Start Quiz', href: '/chooseSubject' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
+    { name: 'Admin Login', href: '/Login' },
+    { name: 'advantage', href: '#advantage' },
     { name: 'Company', href: '#' },
 ]
 
@@ -15,9 +15,9 @@ function Navbar() {
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <img
+                        <img style={{ height: 54 }}
                             className="h-8 w-auto"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                            src="https://firebasestorage.googleapis.com/v0/b/notes-5bb98.appspot.com/o/94993-OKL7N5-806-removebg-preview.png?alt=media&token=b81f78e9-8f7d-4f8a-873d-373d202712c9"
                             alt=""
                         />
                     </a>
@@ -40,9 +40,7 @@ function Navbar() {
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Log in <span aria-hidden="true">&rarr;</span>
-                    </a>
+
                 </div>
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

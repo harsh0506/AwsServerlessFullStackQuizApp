@@ -3,6 +3,8 @@ import HeroSection from './HeroSection'
 import Advantage from "./AdvantageOfQuiz"
 import Navbar from './Navbar'
 import Footer from './Footer'
+import ContactUsPage from './Contactus'
+
 function LandingPage() {
     return (
         <>
@@ -17,6 +19,8 @@ function LandingPage() {
                 <Navbar />
                 <HeroSection />
                 <Advantage />
+                <ContactUsPage />
+                
                 <Footer />
             </div>
 
