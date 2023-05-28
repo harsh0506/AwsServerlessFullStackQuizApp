@@ -41,8 +41,7 @@ function AdvantageOfQuiz() {
                         {features.map((feature) => (
                             <div key={feature.name} className="relative pl-16">
                                 <dt className="text-base font-semibold leading-7 text-[#2dad58]">
-                                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                                    </div>
+                                    
                                     {feature.name}
                                 </dt>
                                 <dd className="mt-2 text-base leading-7 text-[#8b9bac]">{feature.description}</dd>
