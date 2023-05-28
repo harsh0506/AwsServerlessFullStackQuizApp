@@ -2,20 +2,20 @@ import React from 'react'
 import { navigation } from './Navbar'
 function Footer() {
     return (
-        <footer class="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 lg:px-8">
+        <footer style={{marginTop:"0rem" , background:"black"}} class="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 lg:px-8">
             <div style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                flexDirection: "column",
+                flexDirection: "column",background:"black",
                 gap: 15
             }} class="border-t border-slate-900/5 py-10">
-                <section class="bg-white">
+                <section class="bg-black">
                     <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
                         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
                             {navigation.map((item, index) => (
                                 <div key={index} class="px-5 py-2">
-                                    <a href={item.href} class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                    <a href={item.href} class="text-base leading-6 text-[#2dad58] hover:text-gray-900">
                                         {item.name}
                                     </a>
                                 </div>

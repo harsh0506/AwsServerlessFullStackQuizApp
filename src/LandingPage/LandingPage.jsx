@@ -12,8 +12,9 @@ function LandingPage() {
                 alignItems: "center",
                 display: "flex",
                 flexDirection: "column",
-                width: "98vw",
+                width: "98.9vw",
                 gap: "20px",
+                background:"black",
                 justifyContent: "center",
             }}>
                 <Navbar />

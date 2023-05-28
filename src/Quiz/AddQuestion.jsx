@@ -301,19 +301,22 @@ const QuestionEditor = () => {
   };
 
   return (
-    <div>
+    <div style={{
+      background: "black",
+      width: "100vw"
+    }}>
       <Navbar />
-      <div style={{marginTop:"4rem"}} className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Perform CRUD Operations</h1>
-        <p className="text-lg mb-4">
+      <div style={{ marginTop: "4rem" }} className="container mx-auto p-4">
+        <h1 style={{ color: "#2dad58" }} className="text-3xl font-bold mb-4">Perform CRUD Operations</h1>
+        <p style={{ color: "white" }} className="text-lg mb-4">
           This page allows you to perform Create, Read, Update, and Delete operations on questions.
         </p>
         <div className="flex items-center space-x-4 mb-4">
-          <select style={{ background: "white" }} onChange={(e) => setSubject(e.target.value)} className="p-2 rounded-lg border border-gray-300">
+          <select style={{ background: "#2dad58", color: "white" }} onChange={(e) => setSubject(e.target.value)} className="p-2 rounded-lg border border-gray-300">
 
             {testData.filter((item, index, self) =>
               index === self.findIndex(i => i.subject === item.subject)
-            ).map((item, index) => (<option key={index} value={item.subject}>{item.subject}</option>))}
+            ).map((item, index) => (<option style={{ color: "white" }} key={index} value={item.subject}>{item.subject}</option>))}
           </select>
 
           <button onClick={() => setModalVisible(true)} className="px-4 py-2 bg-blue-500 text-white rounded-lg">Add Question</button>

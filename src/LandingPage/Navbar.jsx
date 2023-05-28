@@ -11,7 +11,7 @@ export const navigation = [
 function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-        <header className="absolute inset-x-0 top-0 z-50">
+        <header style={{background:"black"}} className="absolute inset-x-0 top-0 z-50">
             <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
@@ -35,7 +35,7 @@ function Navbar() {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                        <a key={item.name} href={item.href} className="text-m font-semibold leading-6 text-[#2dad58]">
                             {item.name}
                         </a>
                     ))}
@@ -52,7 +52,7 @@ function Navbar() {
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                src="https://firebasestorage.googleapis.com/v0/b/notes-5bb98.appspot.com/o/94993-OKL7N5-806-removebg-preview.png?alt=media&token=b81f78e9-8f7d-4f8a-873d-373d202712c9"
                                 alt=""
                             />
                         </a>

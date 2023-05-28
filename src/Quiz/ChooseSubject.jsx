@@ -16,18 +16,18 @@ const WordCard = () => {
         <>
             <Navbar />
             <div style={{
-                width: "100vw",
+                background:"black",
+                width: "98vw",
                 height: "100vh"
                 , flexDirection: "column"
             }} className="flex justify-center items-center h-screen bg-gray-100">
                 <div style={{ display: "flex", flexDirection: "column" }}>
-                    <h1 className="text-3xl font-bold text-center mb-4">Subject Selection</h1>
-                    <p className="text-lg text-center mb-8">
+                    <h1 style={{color:"#2dad58"}} className="text-3xl font-bold text-center mb-4">Subject Selection</h1>
+                    <p style={{color:"white"}} className="text-lg text-center mb-8">
                         Choose a Subject from the options below:
                     </p>
                 </div>
                 <div style={{ width: "50vw" }} className="grid grid-cols-2 gap-4 max-w-3xl mx-4 md:mx-auto">
-
                     {
                         subject.map((item, index) => (
                             <div

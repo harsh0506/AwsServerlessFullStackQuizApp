@@ -47,9 +47,9 @@ function Auth() {
 
 
     return (
-        <div style={{ width: "98vw" }} class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
+        <div style={{ width: "98.9vw" }} class="min-h-screen bg-black text-gray-900 flex justify-center">
             <Navbar />
-            <div
+            <div style={{marginTop:"8rem"}}
                 class="max-w-screen-xl m-0 sm:m-20 bg-white shadow sm:rounded-lg flex justify-center flex-1"
             >
                 <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
@@ -78,7 +78,7 @@ function Auth() {
 
                                 <div className="flex space-x-4">
                                     <button onClick={()=>SIWG("Add")}
-                                        class="mt-5 tracking-wide font-semibold bg-[#E7B3AE] text-gray-100 w-full py-4 rounded-lg hover:bg-[#A6271E] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
+                                        class="mt-5 tracking-wide font-semibold bg-[#2dad58] text-gray-100 w-full py-4 rounded-lg hover:bg-[#2dad58] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
                                     >
                                         <svg
                                             class="w-6 h-6 -ml-2"
@@ -98,7 +98,7 @@ function Auth() {
                                     </button>
 
                                     <button onClick={()=>SIWG("dkjd")}
-                                        class="mt-5 tracking-wide font-semibold bg-[#E7B3AE] text-gray-100 w-full py-4 rounded-lg hover:bg-[#A6271E] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
+                                        class="mt-5 tracking-wide font-semibold bg-[#2dad58] text-gray-100 w-full py-4 rounded-lg hover:bg-[#2dad58] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
                                     >
                                         <svg
                                             class="w-6 h-6 -ml-2"
@@ -117,11 +117,12 @@ function Auth() {
                                         </span>
                                     </button>
                                 </div>
+                                <p>contact joshiharsh0506@gmail.com for email and password</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 bg-[#E7B3AE] text-center hidden lg:flex">
+                <div class="flex-1 bg-[#2dad58] text-center hidden lg:flex">
                     <div
                         class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
                         style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/notes-5bb98.appspot.com/o/Online%20test-pana%20(1).png?alt=media&token=1c22c800-6c58-4788-b403-efbd3882fa4c')" }}
