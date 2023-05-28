@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Contactus.css"
+import "./ContactUs.css"
 const ContactUsPage = () => {
 
     const [name, setNAme] = useState()
